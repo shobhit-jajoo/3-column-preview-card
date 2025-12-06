@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    overflow: hidden; 
+    max-width: 900px;
+}
+
+main>div{
+    width: 30vh;
+    height: 50vh;
+}
+main div:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+}
+main div:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+main div:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+}
+main>div>img{
+    display: block;
+    margin: 2rem;   
+}
+main>div>span{
+    display: block;
+    font-size: 2rem;
+    margin: 2rem;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 1rem;
+    font-family:'Big Shoulders Display';
+    font-weight: 700;
+}
+main>div>p{
+    margin: 0 2rem 0 2rem;
+    color: hsl(0, 0%, 100%, 0.75);
+    font-size: small;
+    line-height: 1.2rem;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
+
+main>div>button{
+    margin: 1rem 2rem;
+    padding: 0.6rem;
+    border-radius: 18px;
+    font-family: 'Lexend Deca';
+    font-weight: 200;
+    border: none;
+    border-color: white;
+}
+.card1>button{
+    color: hsl(31, 77%, 52%);
+}
+.card2>button{
+    color: hsl(184, 100%, 22%);
+}
+.card3>button{
+    color: hsl(179, 100%, 13%);
+}
+.card1>button:hover{
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    cursor: pointer;
+    border:2px solid white;
+}
+.card2>button:hover{
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+    cursor: pointer;
+    border:2px solid white;
+}
+.card3>button:hover{
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+    cursor: pointer;
+    border:2px solid white;
+}
+
+@media(max-width:600px){
+    main{
+        flex-direction:column;
+        max-width: 350px;
+        margin: 10% 10% 10% 10%;
+    }
+    main>div{
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+    }
+}
